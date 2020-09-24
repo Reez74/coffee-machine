@@ -102,7 +102,7 @@ function getChange(num,isRecursion=false){
   else if(num>=1) coin=1;
   
   if (coin>0){
-    change_box.innerHTML += `<img onclick="this.hidden=true" src="../img/${coin}rub.png" style="top:${top}px; left:${left}px;">`;
+    change_box.innerHTML += `<img onclick="this.hidden=true" src="img/${coin}rub.png" style="top:${top}px; left:${left}px;">`;
     getChange(num-coin,true);
 
   }else if (isRecursion){
